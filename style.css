@@ -139,4 +139,21 @@ table {
     top: 0;
     left: -23px; }
 
+.content {
+  line-height: 32px; }
+  .content_center {
+    text-align: center; }
+  .content_agreement {
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(66, 71, 83, 0.8); }
+  .content__footer {
+    color: #ffffff; }
+    .content__footer_author {
+      font-size: 13px;
+      line-height: 20px; }
+    .content__footer_link {
+      font-size: 15px;
+      line-height: 18px; }
+
 /*# sourceMappingURL=style.css.map */
