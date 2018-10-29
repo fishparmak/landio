@@ -1,0 +1,32 @@
+.content{
+		line-height: 32px;
+
+    &_center{
+				text-align: center;
+		}
+
+		&_agreement{
+				font-size: 15px;
+				line-height: 18px;
+				color: rgba(66, 71, 83, 0.8);
+		}
+
+		&__footer{
+				color: #ffffff;
+
+				&_author{
+					font-size: 13px;
+					line-height: 20px;
+				}
+				&_link{
+					font-size: 15px;
+					line-height: 18px;
+				}
+		}
+}
+
+
+
+
+
+
