@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.tabs {
+  display: block;
+  position: relative;
+  font-family: inherit;
+  min-height: 500px;
+  background-color: rgba(50, 46, 62, 0.56);
+  background-image: linear-gradient(200.09deg, rgba(43, 139, 227, 0.07), rgba(102, 63, 181, 0.9)), url("icons/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tabs__content {
+  display: block;
+  text-align: center;
+}
+.tabs__text {
+  margin-top: 6.7px;
+  margin-bottom: 11.3px;
+}
+.tabs__text_name {
+  position: relative;
+}
+.tabs__text_name::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 3px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+.tabs__nav {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 38px;
+  /*        bottom: 38px;
+          margin: {
+              top: 98px;
+              bottom: 21px;
+          }*/
+}
+.tabs__element {
+  /*display: inline-block;
+  text-align: center;
+  margin: 0 auto;*/
+}
+.tabs__input {
+  display: none;
+}
+.tabs__img {
+  border-radius: 50%;
+  max-width: 70px;
+  max-height: 70px;
+  margin-left: 7px;
+  margin-left: 7px;
+}
+.tabs__img_content {
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 90px;
+}
+
+/*# sourceMappingURL=tab.css.map */
