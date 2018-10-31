@@ -1,142 +1,64 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+/*
+Error: File to import not found or unreadable: variables.
+        on line 1 of src/subtitle.scss
+        from line 4 of src/allScss.scss
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+1: @import "reset";
+2: @import "button";
+3: @import "inputs";
+4: @import "subtitle";
 
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after {
-  content: '';
-  content: none; }
-
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.button {
-  outline: none;
-  padding: 23px 70px 21px 70px;
-  text-align: center;
-  font-family: inherit;
-  font-size: 13px;
-  line-height: 15px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  background-color: inherit;
-  transition: all 200ms;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 40px; }
-  .button_primary {
-    color: #ffffff;
-    border-color: #ffffff; }
-  .button_secondary {
-    background-color: #6c59b4;
-    color: #ffffff;
-    border-color: #6c59b4; }
-  .button_alternative {
-    border: 2px solid #6c59b4;
-    color: #6c59b4;
-    border-color: #6c59b4; }
-  .button_img {
-    padding-right: 41px;
-    text-align: right;
-    background-image: url("src/button__icon.svg");
-    background-repeat: no-repeat;
-    background-position: 36px center; }
-  .button:hover {
-    background-color: #f2d9e6; }
-  .button:active, .button:focus {
-    background-color: #f2d9e6;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px); }
-
-.input {
-  position: relative;
-  width: 263px;
-  height: 60px;
-  padding: 15px 20px 15px 70px;
-  font-family: inherit;
-  font-size: 16px;
-  color: #424753;
-  line-height: 32px;
-  font-weight: normal;
-  vertical-align: middle;
-  background-color: #ffffff;
-  background-position: 17px center;
-  background-repeat: no-repeat;
-  border: 2px solid #e0e0e5;
-  border-radius: 5px;
-  transition: border-color 250ms; }
-  .input_name {
-    background-image: url("src/icons/inputs/name.svg"); }
-  .input_email {
-    background-image: url("src/icons/inputs/email.svg"); }
-  .input_password {
-    background-image: url("src/icons/inputs/password.svg"); }
-  .input:focus {
-    border-color: #8779bd;
-    box-shadow: 2px 2px 10px rgba(135, 121, 189, 0.4), -2px -2px 10px rgba(135, 121, 189, 0.4);
-    outline: none; }
-
-.checkbox {
-  opacity: 0;
-  margin: 0;
-  margin-left: 13px; }
-  .checkbox + .custom::after {
-    content: none; }
-  .checkbox:checked + .custom::after {
-    content: url("src/icons/inputs/check.svg"); }
-  .checkbox:focus + .custom::before {
-    outline: #3b99fc auto 5px; }
-
-.custom {
-  position: relative;
-  font-family: inherit;
-  font-size: 15px;
-  line-height: 18px;
-  color: rgba(66, 71, 83, 0.8); }
-  .custom__link {
-    text-decoration: none;
-    outline: none;
-    color: inherit;
-    border-bottom: 1px solid rgba(187, 190, 196, 0.8); }
-  .custom__link:hover {
-    font-weight: bold; }
-  .custom__link:focus {
-    outline: #3b99fc auto 5px; }
-  .custom::before, .custom::after {
-    position: absolute; }
-  .custom::before {
-    content: '';
-    display: inline-block;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -30px;
-    height: 20px;
-    width: 20px;
-    background-color: #ffffff;
-    border: 2px solid #e0e0e5; }
-  .custom::after {
-    content: url("src/icons/inputs/check.svg");
-    top: 0;
-    left: -23px; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+src/subtitle.scss:1
+src/allScss.scss:4
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:44:in `import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: variables.\A         on line 1 of src/subtitle.scss\A         from line 4 of src/allScss.scss\A \A 1: @import \"reset\";\A 2: @import \"button\";\A 3: @import \"inputs\";\A 4: @import \"subtitle\";"; }
