@@ -1,34 +1,22 @@
 /*
-Error: File to import not found or unreadable: variables.
-        on line 1 of src/subtitle.scss
-        from line 4 of src/allScss.scss
+Error: File to import not found or unreadable: ../node_modules/bootstrap/scss/bootstrap-grid.scss.
+        on line 3 of src/all.scss
 
 1: @import "reset";
-2: @import "button";
-3: @import "inputs";
-4: @import "subtitle";
+2: 
+3: @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+4: @import "button";
+5: @import "input";
+6: @import "checkbox";
+7: @import "content";
 
 Backtrace:
-src/subtitle.scss:1
-src/allScss.scss:4
+src/all.scss:3
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:44:in `import'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:28:in `imported_file'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:37:in `css_import?'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
@@ -61,4 +49,4 @@ src/allScss.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: variables.\A         on line 1 of src/subtitle.scss\A         from line 4 of src/allScss.scss\A \A 1: @import \"reset\";\A 2: @import \"button\";\A 3: @import \"inputs\";\A 4: @import \"subtitle\";"; }
+  content: "Error: File to import not found or unreadable: ../node_modules/bootstrap/scss/bootstrap-grid.scss.\A         on line 3 of src/all.scss\A \A 1: @import \"reset\";\A 2: \A 3: @import \"../node_modules/bootstrap/scss/bootstrap-grid.scss\";\A 4: @import \"button\";\A 5: @import \"input\";\A 6: @import \"checkbox\";\A 7: @import \"content\";"; }
