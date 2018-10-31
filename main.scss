@@ -1,22 +1,9 @@
-* {
-	box-sizing: border-box;
-}
-
-
-$mainBgColor: rgba(234, 238, 243, 0.2);
-$colorWhite: #ffffff;
-
-$bgImage: url('stylesheets/images/action-bg.png');
-$bgMask: url('stylesheets/images/action-mask.png');
-$twitterIcon: url('stylesheets/icons/twitter.svg');
-$facebookIcon: url('stylesheets/icons/facebook.svg');
-$linkedInIcon: url('stylesheets/icons/linkedin.svg');
-
+@import 'variables';
 
 .action {
 	position: relative;
-	min-height: 100vh;
-	max-height: 1600px;
+	height: 100vh;
+	max-height: 1000px;
 	
 	background: $mainBgColor 
 	            linear-gradient(200deg, rgba(43, 139, 227, 0.8) 6.12%, rgba(102, 63, 181, 0.8) 90.47%)
@@ -50,7 +37,7 @@ $linkedInIcon: url('stylesheets/icons/linkedin.svg');
 	}
 
 	&__logo {
-
+	
 	}
 
 	&__nav {

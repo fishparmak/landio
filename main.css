@@ -1,10 +1,7 @@
-* {
-  box-sizing: border-box; }
-
 .action {
   position: relative;
-  min-height: 100vh;
-  max-height: 1600px;
+  height: 100vh;
+  max-height: 1000px;
   background: rgba(234, 238, 243, 0.2) linear-gradient(200deg, rgba(43, 139, 227, 0.8) 6.12%, rgba(102, 63, 181, 0.8) 90.47%) center; }
   .action::before, .action::after {
     content: '';
