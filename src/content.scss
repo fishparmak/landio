@@ -1,22 +1,21 @@
 @import "variables";
 
 .content {
-	color: $textColor;
+		color: $textColor;
 
-    &_center {
-		text-align: center;
-	}
-
-	&__footer {
-		&_author {
-			font-size: 13px;
-			line-height: 20px;
-            
+	  &_center {
+				text-align: center;
 		}
 
-		&_link {
-			font-size: 15px;
-			line-height: 18px;
+		&__footer {
+				&_author {
+						font-size: 13px;
+						line-height: 20px;    
+				}
+
+				&_link {
+						font-size: 15px;
+						line-height: 18px;
+				}
 		}
-	}
 }
