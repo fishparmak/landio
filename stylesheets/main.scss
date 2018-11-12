@@ -2,18 +2,18 @@ $mainBgColor: rgba(234, 238, 243, 0.2);
 $colorWhite: #ffffff;
 $colorGrey: #f4f5f7;
 $colorOfFooter: #312F38;
-$bgImage: url('../stylesheets/images/action-bg.png');
+$bgImage: url('../stylesheets/images/action-bg.jpg');
 $bgMask: url('../stylesheets/images/action-mask.png');
 $twitterIcon: url('../stylesheets/icons/twitter.svg');
 $facebookIcon: url('../stylesheets/icons/facebook.svg');
 $linkedInIcon: url('../stylesheets/icons/linkedin.svg');
-$tabsBackgroundImage: url("../stylesheets/icons/background-tabs.png");
+$tabsBackgroundImage: url("../stylesheets/icons/background-tabs.jpg");
 
 /* News */
 $tagIcon: url('../stylesheets/icons/tag-icon.svg');
 $timeIcon: url('../stylesheets/icons/time-icon.svg');
-$firstNewsImg: url('../stylesheets/images/news-bg.png');
-$secondNewsImg: url('../stylesheets/images/news-bg-2.png');
+$firstNewsImg: url('../stylesheets/images/news-bg.jpg');
+$secondNewsImg: url('../stylesheets/images/news-bg-2.jpg');
 $newsArrow: url('../stylesheets/icons/arrow.svg');
 
 $ratesBgColor: #f4f5f7;
@@ -63,7 +63,7 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	}
 
 	&__header {
-		display: flex;
+		position: relative;
 		padding: 45px 0 20px;
 	}
 
@@ -79,12 +79,43 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 	&__subtitle {
 		margin-bottom: 62px;
 	}
+
+	&__toggle {
+		position: absolute;
+		height: 15px;
+		width: 20px;
+		top: 50px;
+		right: 20px;
+	}
 }
 
 // Logo component
 .logo {
+	display: inline-block;
 	&__img {
 
+	}
+}
+
+// Nav component
+.nav {
+	&__item {
+		text-align: center;
+		margin: 10px auto;
+	}
+
+	&__item:last-child {
+		margin-bottom: 0;
+	}
+}
+
+#nav {
+	&:not(:target) {
+		display: none;
+	}
+
+	&:target {
+		display: block;
 	}
 }
 
@@ -143,13 +174,6 @@ $imgMaskColor: rgba(255, 255, 255, 0.6);
 		}
 	}
 }
-
-// Nav component
-.nav {
-	display: flex;
-	align-items: center;
-}
-
 
 //feedback
 .feedback {

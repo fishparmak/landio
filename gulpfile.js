@@ -25,14 +25,14 @@ gulp.task('autoprefixer', function () {
 });
 
 gulp.task('minify', function () {
-    gulp.src('./build/main.css')
+    return gulp.src('./build/main.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./build'));
 });
 
 gulp.task('scss:watch', function () {
-    gulp.watch(['./src/*.scss', './stylesheets/main.scss'], [ 'scss' ]);
+    gulp.watch(['./src/*.scss', './stylesheets/main.scss'], [ 'scss'] );
 });
 
 gulp.task('default', [ 'scss', 'scss:watch' ]);
