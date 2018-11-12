@@ -1358,12 +1358,39 @@ html {
   text-decoration: none;
   padding-bottom: 5px;
   display: inline-block; }
-  .link_right-margin {
-    margin-right: 20px; }
+  @media (min-width: 992px) {
+    .link_right-margin {
+      margin-right: 20px; } }
   .link_animated {
     transition: 0.1s linear; }
   .link_animated:hover {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+  .link_search {
+    vertical-align: middle; }
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .toggle__child {
+    display: block;
+    line-height: 20px;
+    position: relative;
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .toggle__child::before, .toggle__child::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); }
+  .toggle__child::before {
+    top: -6px; }
+  .toggle__child::after {
+    bottom: -6px; }
 
 .title {
   font-size: 28px;
@@ -1406,6 +1433,9 @@ html {
 .scale-1-2 {
   transform: scale(1.2) !important; }
 
+.m-0 {
+  margin: 0 !important; }
+
 .mb-30 {
   margin-bottom: 30px !important; }
 
@@ -1422,6 +1452,8 @@ html {
     padding-left: 110px !important; }
   .scale-sm-1-2 {
     transform: scale(1.2) !important; }
+  .m-sm-0 {
+    margin: 0 !important; }
   .mb-sm-30 {
     margin-bottom: 30px !important; }
   .mb-sm-60 {
@@ -1437,6 +1469,8 @@ html {
     height: 100vh !important; } }
 
 @media (min-width: 768px) {
+  .m-md-0 {
+    margin: 0 !important; }
   .p-md-0 {
     padding: 0 !important; }
   .p-left-md-110 {
@@ -1447,6 +1481,8 @@ html {
     height: 100vh !important; } }
 
 @media (min-width: 992px) {
+  .m-lg-0 {
+    margin: 0 !important; }
   .p-lg-0 {
     padding: 0 !important; }
   .p-left-lg-110 {
@@ -1464,6 +1500,8 @@ html {
     height: 100vh !important; } }
 
 @media (min-width: 1200px) {
+  .m-xl-0 {
+    margin: 0 !important; }
   .p-xl-0 {
     padding: 0 !important; }
   .p-left-xl-110 {
@@ -1492,11 +1530,11 @@ html {
     opacity: 0.5;
     z-index: -10; }
   .action::after {
-    background: rgba(255, 255, 255, 0.5) url("../stylesheets/images/action-bg.png") no-repeat center;
+    background: rgba(255, 255, 255, 0.5) url("../stylesheets/images/action-bg.jpg") no-repeat center;
     background-size: cover;
     z-index: -100; }
   .action__header {
-    display: flex;
+    position: relative;
     padding: 45px 0 20px; }
   .action__slogan {
     padding-top: 15%;
@@ -1505,6 +1543,28 @@ html {
     margin-bottom: 17px; }
   .action__subtitle {
     margin-bottom: 62px; }
+  .action__toggle {
+    position: absolute;
+    height: 15px;
+    width: 20px;
+    top: 50px;
+    right: 20px; }
+
+.logo {
+  display: inline-block; }
+
+.nav__item {
+  text-align: center;
+  margin: 10px auto; }
+
+.nav__item:last-child {
+  margin-bottom: 0; }
+
+#nav:not(:target) {
+  display: none; }
+
+#nav:target {
+  display: block; }
 
 .socials {
   display: block;
@@ -1540,10 +1600,6 @@ html {
       content: url("../stylesheets/icons/facebook.svg"); }
     .socials__link_linkedin::before {
       content: url("../stylesheets/icons/linkedin.svg"); }
-
-.nav {
-  display: flex;
-  align-items: center; }
 
 .feedback {
   background: #f4f5f7;
@@ -1691,7 +1747,7 @@ html {
     height: 100%;
     opacity: 0.1;
     background-color: #F6F7F8;
-    background-image: url("../stylesheets/icons/background-tabs.png");
+    background-image: url("../stylesheets/icons/background-tabs.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left bottom; }
@@ -1731,9 +1787,9 @@ html {
       background-color: rgba(255, 255, 255, 0.6);
       z-index: 100; }
     .news__img_first {
-      background-image: url("../stylesheets/images/news-bg.png"); }
+      background-image: url("../stylesheets/images/news-bg.jpg"); }
     .news__img_second {
-      background-image: url("../stylesheets/images/news-bg-2.png"); }
+      background-image: url("../stylesheets/images/news-bg-2.jpg"); }
   .news__post {
     min-height: 400px;
     background-color: #312F38; }

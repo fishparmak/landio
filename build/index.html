@@ -4,23 +4,39 @@
 	<title>Landio</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="main.min.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="main.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 	<main class="action h-lg-100">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<header class="action__header justify-content-between">
+					<header class="action__header d-flex flex-column flex-lg-row justify-content-lg-between">
 						<a href="#" class="logo">
 							<img src="../stylesheets/icons/logo.svg" alt="Land.io" class="logo__img">
 						</a>
-						<nav class="nav d-flex">
-							<a class="nav__link link link_animated link_right-margin" href="#">About Land.io</a>
-							<a class="nav__link link link_animated link_right-margin" href="#">How it works</a>
-							<a class="nav__link link link_animated link_right-margin" href="#">Support</a>
-							<a class="nav__link link link_animated link_right-margin" href="#">Log in</a>
-							<img class="nav__link link link_animated" src="../src/icons/nav/search.svg"></img>
+						<a href="#nav" class="d-lg-none action__toggle toggle" id="js-navbar-toggle" aria-label="Open Navigation">
+							<span class="toggle__child"></span>
+						</a>
+						<nav class="nav d-lg-block" id="nav" aria-label="Close Navigation">
+							<ul class="nav__list d-flex flex-column flex-lg-row" id="js-menu">
+								<li class="nav__item ">
+									<a class="link link_animated link_right-margin" href="#">About Land.io</a>
+								</li>
+								<li class="nav__item ">
+									<a class="link link_animated link_right-margin" href="#">How it works</a>						
+								</li>
+								<li class="nav__item ">
+									<a class="link link_animated link_right-margin" href="#">Support</a>
+								</li>
+								<li class="nav__item ">
+									<a class="link link_animated link_right-margin" href="#">Log in</a>
+								</li>
+								<li class="nav__item ">
+									<img class="link link_search link_animated" src="../src/icons/nav/search.svg"></img>				
+								</li>		
+							</ul>
 						</nav>
 					</header>
 				</div>
@@ -247,7 +263,7 @@
 						<div class="news__img news__img_first"></div>
 					</div>
 					<div class="col-12 col-sm-6 p-sm-0">
-						<div class="news__post d-flex flex-column justify-content-center align-items-center align-items-md-start p-0 p-left-md-110">
+						<div class="news__post d-flex flex-column justify-content-center align-items-center align-items-lg-start p-0 p-left-md-110">
 							<div class="container">
 								<h2 class="news__title">Featured article</h2>
 								<p class="news__content content">Design studio with product designer Peter Finlan</p>

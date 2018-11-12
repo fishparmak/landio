@@ -11,9 +11,11 @@ $line-height: 18px;
 	text-decoration: none;
 	padding-bottom: 5px;
 	display: inline-block;
-
-	&_right-margin{
-		margin-right: 20px;
+	
+	@media (min-width: 992px) { 
+		&_right-margin {
+			margin-right: 20px;
+		}
 	}
 	
 	&_animated {
@@ -22,5 +24,9 @@ $line-height: 18px;
 
 	&_animated:hover {
 		border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	}
+
+	&_search {
+		vertical-align: middle;
 	}
 }
