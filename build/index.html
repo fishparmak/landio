@@ -16,11 +16,16 @@
 						<a href="#" class="logo">
 							<img src="../stylesheets/icons/logo.svg" alt="Land.io" class="logo__img">
 						</a>
-						<a href="#nav" class="d-lg-none action__toggle toggle" id="js-navbar-toggle" aria-label="Open Navigation">
-							<span class="toggle__child"></span>
-						</a>
-						<nav class="nav d-lg-block" id="nav" aria-label="Close Navigation">
-							<ul class="nav__list d-flex flex-column flex-lg-row" id="js-menu">
+						<div class="action__toggle d-lg-none">
+							<a class=" toggle" aria-label="Open Navigation">
+								<span class="toggle__child"></span>
+								<span class="toggle__child"></span>
+								<span class="toggle__child"></span>
+							</a>
+						</div>
+
+						<nav class="nav d-none d-lg-block" aria-label="Close Navigation">
+							<ul class="nav__list d-flex flex-column flex-lg-row">
 								<li class="nav__item ">
 									<a class="link link_animated link_right-margin" href="#">About Land.io</a>
 								</li>
@@ -361,5 +366,6 @@
 	</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jquery-->
+<script src="toggle.js"></script>
 <script src="tab.js"></script>
 </html>
