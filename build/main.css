@@ -1369,28 +1369,39 @@ html {
     vertical-align: middle; }
 
 .toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 16px;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
   cursor: pointer; }
   .toggle__child {
-    display: block;
-    line-height: 20px;
-    position: relative;
-    height: 2px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); }
-  .toggle__child::before, .toggle__child::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.8); }
-  .toggle__child::before {
-    top: -6px; }
-  .toggle__child::after {
-    bottom: -6px; }
+    width: 100%;
+    height: 2px;
+    left: 0;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: rotate(0deg);
+    opacity: 1;
+    transition: .25s ease-in-out; }
+    .toggle__child:first-child {
+      top: 0; }
+      .toggle__child:first-child.open {
+        top: 7px;
+        transform: rotate(135deg); }
+    .toggle__child:nth-child(2) {
+      top: 7px;
+      transition: .1s ease-in-out; }
+      .toggle__child:nth-child(2).open {
+        opacity: 0;
+        left: -20px; }
+    .toggle__child:last-child {
+      top: 14px; }
+      .toggle__child:last-child.open {
+        top: 7px;
+        transform: rotate(-135deg); }
 
 .title {
   font-size: 28px;
@@ -1545,8 +1556,6 @@ html {
     margin-bottom: 62px; }
   .action__toggle {
     position: absolute;
-    height: 15px;
-    width: 20px;
     top: 50px;
     right: 20px; }
 
@@ -1559,12 +1568,6 @@ html {
 
 .nav__item:last-child {
   margin-bottom: 0; }
-
-#nav:not(:target) {
-  display: none; }
-
-#nav:target {
-  display: block; }
 
 .socials {
   display: block;

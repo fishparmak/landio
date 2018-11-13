@@ -1,36 +1,56 @@
 @import "variables";
 
 .toggle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: block;
+	position: relative;
+
+	width: 20px;
+	height: 16px;
+
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
 
 	cursor: pointer;
 	&__child {
-		display: block;
-		line-height: 20px;
-		position: relative;
-		height: 2px;
-		width: 100%;
-
-		background-color: $toggleColor;
-	}
-
-	&__child::before,
-	&__child::after {
-		content: '';
-		display: block;
-		width: 100%;
-		height: 2px;
 		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+
+		line-height: 20px;
+
 		background-color: $toggleColor;
-	}
 
-	&__child::before {
-		top: -6px;
-	}
+		transform: rotate(0deg);
+		opacity: 1;
+		transition: .25s ease-in-out;
 
-	&__child::after {
-		bottom: -6px;
+		&:first-child {
+			top: 0;
+
+			&.open {
+				top: 7px;
+				transform: rotate(135deg);
+			}
+		}
+
+		&:nth-child(2) {
+			top: 7px;
+			transition: .1s ease-in-out;
+
+			&.open {
+				opacity: 0;
+				left: -20px;
+			}
+		}
+
+		&:last-child {
+			top: 14px;
+			&.open {
+				top: 7px;
+				transform: rotate(-135deg);
+			}
+		}
 	}
 }
+
